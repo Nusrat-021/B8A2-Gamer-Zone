@@ -19,9 +19,9 @@
 
 /* shared  */
 .container {
-    max-width: 1940px;
-    margin: 0 auto;
-    padding: 0 15rem;
+  max-width: 1940px;
+  margin: 0 auto;
+  padding: 0 15rem;
 }
 /* normal description */
 .text-description {
@@ -40,6 +40,8 @@
   font-weight: 600;
 }
 
+/* margin top and margin bottom for each section */
+
 /* navbar style */
 nav {
   display: flex;
@@ -49,7 +51,7 @@ nav {
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 /* navbar logo section style */
-nav .logo-container {
+.logo-container {
   display: flex;
   align-items: center;
   gap: 1.25rem;
@@ -72,11 +74,13 @@ nav .logo-container {
   display: flex;
   align-items: center;
 }
-.nav-links ul li {
+.nav-links ul li,
+.link-row li {
   list-style: none;
   margin-right: 2rem;
 }
-.nav-links ul li a {
+.nav-links ul li a,
+.link-row li a {
   text-decoration: none;
 }
 
@@ -101,7 +105,7 @@ nav .logo-container {
 }
 
 /* banner style */
-.banner{
+.banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -123,9 +127,9 @@ nav .logo-container {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.banner ul{
-    margin-top: 1.5rem;
-    margin-bottom: 2.5rem;
+.banner ul {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 .banner ul li {
   list-style: none;
@@ -137,19 +141,60 @@ nav .logo-container {
   margin-right: 0.75rem;
 }
 /* style for banner section button */
-.banner-content .button-container{
-    display: flex;
+.banner-content .button-container {
+  display: flex;
 }
-.btn-color{
-    background: var(--info-color);
-    margin-left: 1.5rem;
+.btn-color {
+  background: var(--info-color);
+  margin-left: 1.5rem;
 }
 
 /* banner image style */
 
-.banner .banner-img{
-    width: 50%;
+.banner .banner-img {
+  width: 50%;
 }
-.banner-img img{
-    width: 100%;
+.banner-img img {
+  width: 100%;
+}
+
+/* footer section design */
+footer {
+  background-color: var(--secondary-color);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7.5rem 0;
+}
+.quick-links,
+.social-media-links,
+.privacy-policy-links {
+  display: flex;
+}
+.quick-links {
+  margin: 3.5rem 0;
+}
+.privacy-policy-links {
+  margin: 4rem 0 1.125rem 0;
+  
+}
+.link-row {
+    display: flex;
+}
+.link-row li a {
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+.icons {
+    font-size: 2.5rem;
+}
+
+.privacy-policy-links li a{
+    color: rgba(255, 255, 255, 0.6);
+}
+footer p{
+    color: rgba(255, 255, 255, 0.6);
 }

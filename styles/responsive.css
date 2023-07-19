@@ -10,7 +10,9 @@
     padding: 2rem;
     box-shadow: none;
   }
-  .nav-links ul {
+  .nav-links ul,.quick-links,
+  .social-media-links,
+  .privacy-policy-links {
     flex-direction: column;
   }
   .nav-links ul li {
@@ -47,6 +49,27 @@
   .banner .banner-img {
     width: 100%;
   }
+  /* footer responsive */
+  /* footer section design */
+  footer {
+    padding: 2rem;
+  }
+  .quick-links,
+.social-media-links,
+.privacy-policy-links{
+    gap: 0.8rem;
+}
+  .link-row li a{
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .icons {
+    font-size: 1.5rem;
+  }
+  footer p{
+    font-size: 0.8rem;
+    text-align: center;
+  }
 }
 
 /* responsive for medium device */
@@ -60,7 +83,7 @@
   .banner {
     padding: 1rem;
   }
-  nav .logo-container {
+  .logo-container {
     gap: 1rem;
   }
   .nav-links ul li {
@@ -101,10 +124,11 @@
 
 /* large device */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  nav, .banner{
+  nav,
+  .banner {
     padding: 2rem 3rem;
   }
-.banner .banner-img{
+  .banner .banner-img {
     width: 50%;
-}
+  }
 }
