@@ -105,6 +105,7 @@ nav {
 .link-row li {
   list-style: none;
   margin-right: 2rem;
+  color: #3C354F;
 }
 .nav-links ul li a,
 .link-row li a {
@@ -132,7 +133,7 @@ nav {
 }
 
 /* banner style */
-.banner {
+.banner{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -178,10 +179,10 @@ nav {
 
 /* banner image style */
 
-.banner .banner-img {
+.banner .banner-img{
   width: 50%;
 }
-.banner-img img {
+.banner-img img{
   width: 100%;
 }
 
@@ -263,6 +264,10 @@ nav {
     bottom: 15rem;
     right: 10rem;
 }
+
+/* career section style */
+
+
 
 /* different game types design */
 .game-card {
