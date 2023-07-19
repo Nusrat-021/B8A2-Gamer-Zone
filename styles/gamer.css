@@ -39,6 +39,25 @@
   font-size: 1.25rem;
   font-weight: 600;
 }
+/* section title */
+.section-title {
+  color: var(--secondary-color);
+  font-size: 3rem;
+  font-weight: 700;
+}
+/* section description */
+.section-description {
+  color: var(--primary-color);
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin: 1.5rem 0 2rem 0;
+}
+.title-span {
+  background: var(--secondary-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 /* margin top and margin bottom for each section */
 .section {
@@ -158,6 +177,24 @@ nav {
 }
 .banner-img img {
   width: 100%;
+}
+
+/* online game card section style */
+.online-game-content{
+    text-align: center;
+
+}
+.online-game-card-container{
+    display: flex;
+    gap: 1rem;
+}
+
+.online-game-card > div{
+    height: 50vh;
+}
+.online-game-card img{
+    width:90%;
+    height: 100%;
 }
 
 /* different game types design */

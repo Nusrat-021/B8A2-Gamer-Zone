@@ -4,8 +4,16 @@
   .text-description {
     font-size: 1rem;
   }
-  .section{
-    margin:1rem 0;
+  .section {
+    margin: 1rem 0;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+    margin: 1rem 0 1.5rem 0;
   }
   /* navbar responsive */
   nav {
@@ -16,7 +24,8 @@
   .nav-links ul,
   .quick-links,
   .social-media-links,
-  .privacy-policy-links {
+  .privacy-policy-links,
+  .online-game-card-container {
     flex-direction: column;
   }
   .nav-links ul li {
@@ -53,18 +62,21 @@
   .banner .banner-img {
     width: 100%;
   }
+  /* online game card responsive */
+
   /* different game types design */
 
-  .game-card{
+  .game-card {
     gap: 0.3rem;
     padding: 0.3rem 0.5rem;
     border-radius: 3.125rem;
     font-size: 0.5rem;
   }
-  .game-card img{
+  .game-card img {
     width: 50%;
   }
-  .game-type{
+  .game-type,
+  .online-game {
     padding: 2rem 1rem;
   }
   .game-types {
@@ -101,6 +113,9 @@
   .text-description {
     font-size: 1rem;
   }
+  .section {
+    margin: 1rem 0;
+  }
   /* navbar style */
   nav,
   .banner {
@@ -123,7 +138,9 @@
     padding: 0.8rem;
   }
   /* banner part responsive */
-  .banner-content {
+  .banner-content,
+  .game-type,
+  .online-game {
     padding: 4rem;
   }
 
@@ -143,6 +160,11 @@
   .banner .banner-img {
     width: 100%;
   }
+  /* online game card */
+  .online-game-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
   /* game types responsive */
   .game-types {
     display: grid;
@@ -154,12 +176,22 @@
 /* large device */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   nav,
-  .banner {
+  .banner,
+  .online-game,
+  .game-type {
     padding: 2rem 3rem;
   }
   .banner .banner-img {
     width: 50%;
   }
+  /* online game card */
+  .online-game-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+.online-game-card img{
+    width: 100%;
+}
   /* game types responsive */
   .game-types {
     display: grid;
