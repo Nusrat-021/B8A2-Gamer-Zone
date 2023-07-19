@@ -21,6 +21,22 @@
 .container {
   padding: 0 15rem;
 }
+/* normal description */
+.text-description {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+/* primary button */
+.btn-primary {
+  color: #fff;
+  background: var(--primary-gradient);
+  border: 0;
+  border-radius: 48px;
+  padding: 1.25rem 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
 
 /* navbar style */
 nav {
@@ -71,8 +87,8 @@ nav .logo-container {
   border-radius: 8px;
   background: rgba(11, 2, 35, 0.1);
 }
-.button-content{
-    margin-right: 1rem;
+.button-content {
+  margin-right: 1rem;
 }
 
 .nav-links ul button > .button-content,
@@ -80,4 +96,45 @@ nav .logo-container {
   color: #3c354f;
   font-size: 1.25rem;
   font-weight: 500;
+}
+
+/* banner style */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* banner content style */
+.banner-greetings {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.banner-title {
+  font-size: 6rem;
+  font-weight: 800;
+  background: var(--secondary-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner ul{
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+.banner ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.banner li img {
+  margin-right: 0.75rem;
+}
+/* style for banner section button */
+.btn-color{
+    background: var(--info-color);
+    margin-left: 1.5rem;
 }
