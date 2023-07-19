@@ -58,6 +58,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.title-span-2{
+    background: var(--primary-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 /* margin top and margin bottom for each section */
 .section {
@@ -200,7 +206,7 @@ nav {
   left: 0;
   right: 0;
   height: 100%;
-  width: 90%;
+  width: 100%;
   opacity: 0;
   transition: 0.5s ease;
   border: 3px solid #ff42a5;
@@ -234,8 +240,28 @@ nav {
   height: 50vh;
 }
 .online-game-card img {
-  width: 90%;
+  width: 100%;
   height: 100%;
+}
+
+/* feature section of game style */
+.feature-container{
+    display: flex;
+    gap: 16.5rem;
+
+}
+.feature-content{
+    text-align: right;
+    margin-top: 10rem;
+}
+.feature-image img{
+    height: 90%;
+}
+
+.feature-image .img2{
+    position: relative;
+    bottom: 15rem;
+    right: 10rem;
 }
 
 /* different game types design */
@@ -259,9 +285,7 @@ nav {
   -webkit-text-fill-color: transparent;
   cursor: pointer;
 }
-.game-type {
-  padding: 2rem;
-}
+
 .game-types {
   display: grid;
   grid-template-columns: repeat(5, 1fr);

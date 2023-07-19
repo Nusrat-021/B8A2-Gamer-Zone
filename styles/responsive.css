@@ -25,7 +25,8 @@
   .quick-links,
   .social-media-links,
   .privacy-policy-links,
-  .online-game-card-container {
+  .online-game-card-container,
+  .feature-container {
     flex-direction: column;
   }
   .nav-links ul li {
@@ -62,7 +63,24 @@
   .banner .banner-img {
     width: 100%;
   }
-  /* online game card responsive */
+  /* feature section responsive */
+  .feature-content{
+    text-align: center;
+    margin-top: 1rem;
+}
+.feature-image img{
+    width: 100%;
+}
+.feature-image .img1 .img2{
+    width:  100%;
+}
+.feature-image .img2{
+    width: 50%;
+    position: relative;
+    bottom: 5rem;
+    right: 1rem;
+}
+
 
   /* different game types design */
 
@@ -76,7 +94,8 @@
     width: 50%;
   }
   .game-type,
-  .online-game {
+  .online-game,
+  .feature {
     padding: 2rem 1rem;
   }
   .game-types {
@@ -91,7 +110,8 @@
   }
   .quick-links,
   .social-media-links,
-  .privacy-policy-links {
+  .privacy-policy-links,
+  .feature-container {
     gap: 0.8rem;
   }
   .link-row li a {
