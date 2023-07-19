@@ -19,7 +19,9 @@
 
 /* shared  */
 .container {
-  padding: 0 15rem;
+    max-width: 1940px;
+    margin: 0 auto;
+    padding: 0 15rem;
 }
 /* normal description */
 .text-description {
@@ -99,13 +101,14 @@ nav .logo-container {
 }
 
 /* banner style */
-.banner {
+.banner{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 /* banner content style */
+
 .banner-greetings {
   color: var(--secondary-color);
   text-transform: uppercase;
@@ -134,7 +137,19 @@ nav .logo-container {
   margin-right: 0.75rem;
 }
 /* style for banner section button */
+.banner-content .button-container{
+    display: flex;
+}
 .btn-color{
     background: var(--info-color);
     margin-left: 1.5rem;
+}
+
+/* banner image style */
+
+.banner .banner-img{
+    width: 50%;
+}
+.banner-img img{
+    width: 100%;
 }

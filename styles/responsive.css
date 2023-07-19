@@ -1,5 +1,9 @@
 /* responsive for mobile device */
 @media screen and (max-width: 576px) {
+  /* shared */
+  .text-description {
+    font-size: 1rem;
+  }
   /* navbar responsive */
   nav {
     flex-direction: column;
@@ -14,20 +18,53 @@
   }
   .nav-links ul button > .button-content,
   .nav-links ul li {
-    font-size: 1rem;
+    font-size: 0.8rem;
+  }
+
+  /* banner part responsive */
+  .banner {
+    flex-direction: column-reverse;
+    padding: 2rem;
+  }
+  .banner-content {
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  .banner-greetings {
+    font-size: 2rem;
+  }
+  .banner-title {
+    font-size: 4rem;
+  }
+  .banner-content .button-container button {
+    padding: 1rem 1.5rem;
+    font-size: 0.8rem;
+  }
+  .btn-color {
+    margin-left: 1rem;
+  }
+  .banner .banner-img {
+    width: 100%;
   }
 }
 
 /* responsive for medium device */
 @media screen and (min-width: 577px) and (max-width: 768px) {
-  nav {
-    padding: 2rem;
+  /* shared */
+  .text-description {
+    font-size: 1rem;
+  }
+  /* navbar style */
+  nav,
+  .banner {
+    padding: 1rem;
   }
   nav .logo-container {
     gap: 1rem;
   }
   .nav-links ul li {
-    margin-right: 1rem;
+    margin-right: 0.5rem;
   }
   .logo-title {
     font-size: 2rem;
@@ -37,13 +74,37 @@
     font-size: 1rem;
   }
   .nav-links ul button {
-    padding: 1rem;
+    padding: 0.8rem;
+  }
+  /* banner part responsive */
+  .banner-content {
+    padding: 4rem;
+  }
+
+  .banner-greetings {
+    font-size: 2rem;
+  }
+  .banner-title {
+    font-size: 4rem;
+  }
+  .banner-content .button-container button {
+    padding: 1rem 1.5rem;
+    font-size: 0.8rem;
+  }
+  .btn-color {
+    margin-left: 1rem;
+  }
+  .banner .banner-img {
+    width: 100%;
   }
 }
 
 /* large device */
-@media screen and (min-width: 769px) and (max-width:1024px) {
-  nav{
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  nav, .banner{
     padding: 2rem 3rem;
   }
+.banner .banner-img{
+    width: 50%;
+}
 }
