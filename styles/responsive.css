@@ -64,23 +64,22 @@
     width: 100%;
   }
   /* feature section responsive */
-  .feature-content{
+  .feature-content {
     text-align: center;
     margin-top: 1rem;
-}
-.feature-image img{
+  }
+  .feature-image img {
     width: 100%;
-}
-.feature-image .img1 .img2{
-    width:  100%;
-}
-.feature-image .img2{
+  }
+  .feature-image .img1 .img2 {
+    width: 100%;
+  }
+  .feature-image .img2 {
     width: 50%;
     position: relative;
     bottom: 5rem;
     right: 1rem;
-}
-
+  }
 
   /* different game types design */
 
@@ -160,7 +159,8 @@
   /* banner part responsive */
   .banner-content,
   .game-type,
-  .online-game {
+  .online-game,
+  .feature {
     padding: 4rem;
   }
 
@@ -185,6 +185,22 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* feature section responsive */
+  .feature-container{
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .feature-content {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .feature-image .img2 {
+    position: relative;
+    bottom: 10rem;
+    right: 4rem;
+  }
   /* game types responsive */
   .game-types {
     display: grid;
@@ -198,7 +214,8 @@
   nav,
   .banner,
   .online-game,
-  .game-type {
+  .game-type ,
+  .feature{
     padding: 2rem 3rem;
   }
   .banner .banner-img {
@@ -209,9 +226,21 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-.online-game-card img{
+  .online-game-card img {
     width: 100%;
-}
+  }
+  /* feature section */
+  .feature-container{
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .feature-content {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .feature-image{
+    margin: 0 auto;
+  }
   /* game types responsive */
   .game-types {
     display: grid;
