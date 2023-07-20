@@ -28,6 +28,7 @@
   .online-game-card-container,
   .feature-container {
     flex-direction: column;
+    
   }
   .nav-links ul li {
     margin: 1rem 0;
@@ -40,13 +41,8 @@
   /* banner part responsive */
   .banner {
     flex-direction: column-reverse;
-    padding: 2rem;
-  }
-  .banner-content {
     padding: 1rem;
-    margin-top: 2rem;
   }
-
   .banner-greetings {
     font-size: 2rem;
   }
@@ -60,7 +56,7 @@
   .btn-color {
     margin-left: 1rem;
   }
-  .banner .banner-img {
+  .banner .banner-content,.banner .banner-img {
     width: 100%;
   }
   /* feature section responsive */
@@ -161,7 +157,7 @@
   .game-type,
   .online-game,
   .feature {
-    padding: 4rem;
+    padding: 3rem;
   }
 
   .banner-greetings {

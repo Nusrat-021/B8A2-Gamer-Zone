@@ -113,7 +113,7 @@ nav {
 }
 
 /* navbar link button style */
-.nav-links ul button {
+.nav-links ul li.button a {
   display: flex;
   align-items: center;
   padding: 1rem 1.25rem;
@@ -137,6 +137,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 3rem;
 }
 
 /* banner content style */
@@ -169,7 +170,12 @@ nav {
   margin-right: 0.75rem;
 }
 /* style for banner section button */
-.banner-content .button-container {
+.banner .banner-content{
+  background:url("../images/Group\ 14.png");
+  width: 50%;
+  padding: 1rem;
+}
+.banner-content .button-container{
   display: flex;
 }
 .btn-color {
@@ -292,9 +298,10 @@ nav {
 }
 
 .game-types {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 /* footer section design */
